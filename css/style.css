@@ -1,0 +1,28 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.card {
+    
+    background-color: #ffffff;
+    width: 600px;
+    height: 452px;
+}
+
+.pergunta{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7026D9;
+    width: 601px;
+    height: 249px;
+}
+
+.resposta{
+
+    font-size: 16px;
+    color: #000000;
+}
