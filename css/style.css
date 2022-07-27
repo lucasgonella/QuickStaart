@@ -1,28 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
 body{
     background-color: #000000;
     color: #ffffff;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
 }
 
+.container-principal {
+    display: flex;
+    height: 100vh;
+    background-color: black;
 
-.card {
+}
+
+.container {
+    width: 50%;
     
-    background-color: #ffffff;
-    width: 600px;
-    height: 452px;
 }
 
-.pergunta{
-    font-size: 25px;
+.centralizar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #7026D9;
-    width: 601px;
-    height: 249px;
 }
 
-.resposta{
+.bloco-principal {
+    padding: 8rem;
+}
 
-    font-size: 16px;
+.logo-principal {
+    font-size: 6rem;
+}
+
+.titulo-principal {
+    font-size: 3rem;
+}
+
+.descricao-principal {
+    margin: 3rem 0;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    
+}
+
+.botao{
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+    height: 6rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+ 
+}
+
+.card {
+    background-color: #ffffff;
+    width: 60rem;
+    height: 45rem;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.card-pergunta {
+    background-color: #7026d9;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.resposta {
+    padding: 3rem 3rem;
+    
+    
+}
+
+.resposta-pergunta {
+    font-size: 1.6rem;
     color: #000000;
 }
