@@ -1,3 +1,8 @@
+const perguntaPadrao = {   
+    "title": "Background",
+    "description": "A propriedade CSS background é usada para definir os valores de fundo individuais em um único lugar na folha de estilo.", 
+    }
+    
 function revelarResposta() {
     var resposta = document.querySelector('#resposta');
     resposta.classList.toggle('blur');
@@ -35,7 +40,10 @@ function buscarInformacao() {
     })
     .then(function (resultadoJson) {
         proximaPergunta(resultadoJson);
-    });
+    })
+    .catch(function(perguntaPadrao) {
+        proximaPergunta(perguntaPadrao)
+      });
 }
 
 window.addEventListener("load", buscarInformacao);
