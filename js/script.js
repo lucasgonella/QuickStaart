@@ -1,3 +1,8 @@
+const perguntaPadrao = {   
+    "title": "Background",
+    "description": "A propriedade CSS background é usada para definir os valores de fundo individuais em um único lugar na folha de estilo.", 
+    }
+
 function revelarResposta() {
     var resposta = document.querySelector('#resposta');
     resposta.classList.toggle('blur');
@@ -29,13 +34,16 @@ function proximaPergunta(proximaPergunta) {
 }
 
 function buscarInformacao() {
-    fetch("https://flash.quickstaart.com/random")
-    .then(function (resultado) {
-        return resultado.json();
-    })
-    .then(function (resultadoJson) {
-        proximaPergunta(resultadoJson);
-    });
-}
+    fetch("https://flash.quickstaart.com/random/")
+      .then(function (resultado) {
+        if (resultado.ok) {
+          proximaPergunta(resultado);
+        }
+        throw new Error("Erro ao realizar o fetch");
+      })
+      .catch(function () {
+        proximaPergunta(perguntaPadrao);
+      });
+  }
 
 window.addEventListener("load", buscarInformacao);
