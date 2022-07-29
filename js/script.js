@@ -1,7 +1,6 @@
 function revelarResposta() {
     var resposta = document.querySelector('#resposta');
     resposta.classList.toggle('blur');
-
 }
 
 function proximaPergunta(proximaPergunta) {
@@ -11,8 +10,6 @@ function proximaPergunta(proximaPergunta) {
     var novaDiv = document.createElement('div');
 
     novaDiv.classList.add('card', "animate__animated", "animate__backInRight");
-
-    
 
     novaDiv.innerHTML = `
         <div class="card-pergunta centralizar">
@@ -34,11 +31,10 @@ function proximaPergunta(proximaPergunta) {
 function buscarInformacao() {
     fetch("https://flash.quickstaart.com/random")
     .then(function (resultado) {
-        return resultado.json()
-        
+        return resultado.json();
     })
     .then(function (resultadoJson) {
-        proximaPergunta(resultadoJson)
+        proximaPergunta(resultadoJson);
     });
 }
 
