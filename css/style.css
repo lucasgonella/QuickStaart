@@ -96,3 +96,19 @@ body{
 .blur {
     filter: blur(5px);
 }
+
+@media (max-width: 1024px) {
+    .container-principal {
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+    }
+    .bloco-principal {
+        padding: 2rem;
+    }
+
+    .card {
+        margin: 2rem;
+    }
+}
