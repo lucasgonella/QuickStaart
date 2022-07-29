@@ -79,17 +79,15 @@ body{
     font-weight: 700;
 }
 
-/* .card-resposta {
-    
-    
-    
-} */
-
-.resposta {
+.card-resposta {
     min-height: 14rem;
     color: #000000;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem;  
 }
+
+/* .resposta {
+
+} */
 
 .card, .botao {
     border-radius: 0.5rem;
