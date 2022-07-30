@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-        <title>Quick Staart</title>
-    </head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <body class="gradiente">
-        <div class="container-principal">
-            <div class="container centralizar">
-                <div class="bloco-principal">
-                    <h1 class="logo-principal">⚡ Flash</h1>
-                    <h2 class="titulo-principal">
-                        Aprenda de forma rápida simples e divertida o vocabulário técnico</h2>       
-                    <p class="descricao-principal">
-                        No cartão você encontrará palavras e expressões que irá utilizar no seu dia a dia
-                        como dev. Aproveite para testar seus conhecimentos e fixar o significado.
-                    </p> 
-                    <div class="botoes">
-                        <button onclick="buscarInformacao()" class="botao">
-                            Próxima Pergunta
-                        </button>
-                        <button onclick="revelarResposta()" class="botao">
-                            Revelar Resposta
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div id="cardContainer" class="container centralizar">
-            </div>
-        </div>
+	<title>Quick Staart</title>
+</head>
 
-        <script src="js/script.js"></script>
-    </body>
+<body class="gradiente">
+	<div class="container-principal">
+		<div class="container centralizar">
+			<div class="bloco-principal">
+				<h1 class="logo-principal">⚡ Flash</h1>
+				<h2 class="titulo-principal">
+					Aprenda de forma rápida simples e divertida o vocabulário técnico</h2>
+				<p class="descricao-principal">
+					No cartão você encontrará palavras e expressões que irá utilizar no seu dia a dia
+					como dev. Aproveite para testar seus conhecimentos e fixar o significado.
+				</p>
+
+				<div class="botoes">
+					<button onclick="buscarInformacao()" class="botao">
+						Próxima Pergunta
+					</button>
+					<button onclick="revelarResposta()" class="botao">
+						Revelar Resposta
+					</button>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="cardContainer" class="container centralizar">
+
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
 
 </html>
